@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom'
 import { Logo } from '../components/Logo'
 import { useCreateSubscriberMutation } from '../graphql/generated'
 
-
 export function Subscribe() {
   const navigate = useNavigate()
 
@@ -31,7 +30,13 @@ export function Subscribe() {
         <div className="max-w-[640px]">
           <Logo />
           <h1 className="text-[2.5rem] leading-tight">Quero Ser Dev | Conteúdos de <strong className="bg-blue-500">migração de carreira</strong> para tecnologia e <strong className="bg-blue-500">tutoriais</strong> para iniciantes</h1>
-          <p className="mt-4 text-gray-200 leading-relaxed">Criei essa plataforma durante os estudos no evento IgniteLab da Rocketseat. Aqui eu pretendo disponibilizar conteúdos listados e exclusivos do canal quero ser dev com tutoriais para pessoas iniciantes. Para acessar basta se cadastrar ao lado.</p>
+          <p className="mt-4 text-gray-200 leading-relaxed">
+            Criei essa plataforma durante os estudos no evento IgniteLab da Rocketseat.
+            <strong className="bg-blue-500">
+              <a href="https://github.com/simaraconceicao/quero-ser-dev-plataform" target="_blank">Inclusive você pode acessar o código dessa plataforma aqui no meu github.</a> 
+            </strong>
+            Aqui eu pretendo disponibilizar conteúdos não listados e exclusivos do canal quero ser dev com tutoriais para pessoas iniciantes. Para acessar basta se cadastrar ao lado.
+          </p>
         </div>
         <div className="p-8 bg-gray-700 border border-gray-300 rounded">
           <strong className="text-2xl mb-6 block">Inscreva-se gratuitamente</strong>
