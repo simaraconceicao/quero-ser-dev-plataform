@@ -76,7 +76,7 @@ export function Video(props: VideoProps) {
             </a>
           </div>
         </div>
-        <div className="max-w-[768px] grid grid-row-1 gap-4 m-20 lg:gap-8 lg:mt-20 lg:grid lg:grid-cols-2">
+        <div className="grid grid-row-1 gap-4 p-6 lg:gap-8 lg:p-20 lg:grid lg:grid-cols-2">
           <a href="https://www.instagram.com/simara_conceicao/" target="_blank" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
             <div className="bg-blue-500 h-full p-6 flex items-center">
               <InstagramLogo size={30} />
