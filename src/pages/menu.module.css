@@ -58,6 +58,8 @@
     justify-content: start;
     flex-direction: column;
     list-style-type: none;
+    text-transform: uppercase;
+    margin-left: 1.3rem;
   }
 
   .itemOpen .linkOpen {

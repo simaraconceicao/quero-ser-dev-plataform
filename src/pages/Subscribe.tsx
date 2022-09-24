@@ -50,7 +50,7 @@ export function Subscribe() {
             <a className={open ? styles.linkOpen : styles.link} href="#about">Sobre</a>
           </li>
           <li className={open ? styles.itemOpen : styles.item}>
-            <a  className={open ? styles.linkOpen : styles.link} href="#degustacao">Degustação</a>
+            <a  className={open ? styles.linkOpen : styles.link} href="#degustacao">Playlist secreta grátis</a>
           </li>
         </ul>
       </nav>
@@ -101,15 +101,18 @@ export function Subscribe() {
       <div id="about" className="pt-20 pb-20">
         <About />
       </div>
-      <div id="degustacao" className="pt-20 pb-20">
-        <div className="bg-blur  bg-cover bg-no-repeat flex flex-col items-center lg:flex lg:justify-center lg:items-center lg:flex-row pt-20">
+      <div id="degustacao" className="pt-20 pb-20 w-[100%]">
+        <div className="bg-blur bg-cover bg-no-repeat flex flex-col items-center lg:flex lg:justify-center lg:items-center lg:flex-row pt-20">
           <div className="flex justify-center flex-col items-center lg:flex lg:justify-center lg:items-center lg:flex-row lg:gap-72">
-            <div className="max-w-[768px] flex justify-center flex-col items-center">
-              <h1 className="max-w-[350px] text-center text-4xl font-bold lg:max-w-[768px]">
-                Vem degustar algumas aulas minhas pra sentir o gostinho do que vem por aí
+            <div className="flex justify-center flex-col items-center">
+              <h1 className="w-[55%] text-center text-4xl font-bold">
+                Vem assistir GRATUITAMENTE algumas das minhas aulas pra saber se curte o que vem por aí
               </h1>
-              <p className="max-w-[370px] mt-4 mb-10 text-gray-200 text-2xl leading-relaxed text-center p-6 lg:max-w-[768px]">
-                Eu gravei essas aulas de ReactJS para iniciantes em novembro de 2021 e disponibilizei numa playlist secreta do canal quero ser dev. São tutoriais de ReactJS com exercícios e projetos. Para o novo curso irei trazer o uso de ferramentas atualizadas e alguns bônus: 10 projetos para iniciar o seu portfólio de ReactJS e Roadmap de ReactJS com mapeamento de próximos passos nos estudos.
+              <p className="w-[70%] mt-4 text-gray-200 text-2xl leading-relaxed text-center p-6">
+                Eu gravei essas aulas de ReactJS para iniciantes em novembro de 2021 e disponibilizei numa playlist secreta do canal quero ser dev. São tutoriais de ReactJS com exercícios e projetos. 
+              </p>
+              <p className="w-[70%] text-gray-200 text-2xl leading-relaxed text-center p-6">
+                Lembrando que para o novo curso, ao pagar um baixo custo você terá acesso ao conteúdo atualizado e mais completo que vai te habilitar a criar projetos pessoais do zero ao deploy com ReactJS. Além de alguns bônus: 10 projetos para iniciar o seu portfólio de ReactJS e Roadmap de ReactJS com mapeamento de próximos passos nos estudos.
               </p>
               <button 
                   onClick={goToEvent}
