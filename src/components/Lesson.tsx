@@ -4,10 +4,10 @@ import ptBR from 'date-fns/locale/pt-BR'
 import { Link, useParams } from 'react-router-dom'
 
 interface LessonProps {
-  title: string
-  slug: string
-  availableAt: Date
-  type: 'carreira' | 'tutorial'
+  title?: string
+  slug?: string
+  availableAt: Date | number
+  type?: 'carreira' | 'tutorial'
 }
 
 export function Lesson(props: LessonProps) {
@@ -29,7 +29,7 @@ export function Lesson(props: LessonProps) {
       <div className={`rounded border border-gray-400 p-4 mt-2 group-hover:border-blue-500 ${isActiveLesson ? 'bg-blue-500 ': ''}`}>
         <header className="flex items-center justify-between">
           {isLessonAvailable ? (
-            <span className={`text-sm text-blue-500 font medium flex items-center gap-2 ${isActiveLesson ? 'text-gray-200': ''}`}>
+            <span className={`text-sm text-gray-200 font medium flex items-center gap-2 ${isActiveLesson ? 'text-gray-200': ''}`}>
               <CheckCircle size={20} />
               Conteúdo liberado
             </span>

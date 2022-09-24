@@ -43,7 +43,7 @@ A plataforma está no ar com 5 aulas atualmente e vou subir mais em breve. Esper
 | `GraphQL Codegen` | Dependência para gerar hooks e tipos de dados das variaveis das mutations e queries|
 | `Vercel` | Hospedagem para a aplicação, fiz o deploy integrado com o github|
 | `Github` | Hospedagem do código fonte integrado com gerenciador de versionamento|
-|
+
 
 <br />
 <br />
@@ -59,7 +59,7 @@ Siga os passos e inclua as informações abaixo:
 | Instale as dependências após acessar a pasta projeto    | `npm i`            |
 | Crie as variaveis de ambiente para integrar com CMS           | `VITE_API_ACCESS_TOKEN` e `VITE_API_URL`     |
 | Rode o projeto              | `npm run dev`       |
-|
+
 
 <br />
 <br />
@@ -76,6 +76,7 @@ Siga os passos e inclua as informações abaixo:
 - botao voltar na pagina evento
 - Header e menu 
 - Sessão pra informações, ferramentas e links
+- E-mail de notificação de novas aulas
 
 <br />
 <br />
