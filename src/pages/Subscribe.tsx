@@ -63,7 +63,7 @@ export function Subscribe() {
                 Um guia de ReactJS para iniciantes. Sem enrolação, direto ao ponto.
               </h1>
               <p className="max-w-[370px] mt-4 mb-10 text-gray-200 text-2xl leading-relaxed text-center p-6 lg:max-w-[768px]">
-                Tutoriais descomplicados e rápidos, que realmente funcionam pra você entender e praticar os fundamentos de ReactJS. 
+                Tutoriais descomplicados e rápidos, que realmente funcionam pra pessoas que querem entender e praticar os fundamentos de ReactJS, mas têm medo ou não sabem por onde começar.
               </p>
             </div>
             <div className="p-8 bg-gray-700 border border-gray-300 rounded mb-[20px]">

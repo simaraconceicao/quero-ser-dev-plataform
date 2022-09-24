@@ -64,9 +64,18 @@ export function About() {
   return (
     <>
       <div>
-        <span className="font-bold text-4xl m-10 border-gray-400 flex justify-center">
-          Conteúdo do curso ReactJS para iniciantes
-        </span>
+        <div className="w-[100%] flex justify-center flex-col items-center lg:flex lg:justify-center lg:items-center lg:flex-col lg:gap-1">
+          <span className="text-center font-bold text-4xl m-10 border-gray-400 flex justify-center">
+            Conteúdo do curso ReactJS para iniciantes
+          </span>
+          <p className="w-[70%] mt-4 mb-10 text-gray-200 text-2xl leading-relaxed text-center flex justify-center p-6">
+            ReactJS é a tecnologia mais usada por pessoas desenvolvedoras experientes e também por pessoas que estão aprendendo a programar, de acordo com a pesquisa do StackOverflow com mais de 70mil pessoas da comunidade tech lançada em maio de 2022.
+            Imagina você aprendendo os passos iniciais de como as grandes plataformas web são criadas. Plataformas como Facebook, Instagram, Twitter, TikTok, Netflix, AirBnB, Notion e muitas outras.
+            Isso te abre possibilidades de conseguir sua vaga como dev front-end jr., no mercado que mais cresce no Brasil e no mundo, com salários e benefícios atrativos até mesmo para pessoas iniciantes ou estagiárias.
+            Se liga aqui embaixo, como tá irado e super completo o conteúdo do curso:
+          </p>
+        </div>
+        
         <div className={styles.containerCard}>
           {conteudos.map(lesson => {
             return (
@@ -80,7 +89,7 @@ export function About() {
         </div>
       </div>
       <div>
-        <span className="font-bold text-4xl m-10 border-gray-400 flex justify-center">
+        <span className="text-center font-bold text-4xl m-10 border-gray-400 flex justify-center">
           Vem conhecer um pouquinho sobre mim
         </span>
         <div className={styles.containerCard}>
