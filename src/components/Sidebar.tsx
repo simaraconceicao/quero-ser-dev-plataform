@@ -13,7 +13,7 @@ export function Sidebar() {
 
   return (
     <>
-      <aside className="max-w-[768px] flex flex-col items-center bg-gray-600 p-6 border-l border-gray-600 lg:flex lg:items-center lg:flex-col">
+      <aside className="w-[100%] flex flex-col items-center bg-gray-600 p-6 border-l border-gray-600 lg:flex lg:items-center lg:flex-col lg:w-[30%]">
         <button 
           onClick={goBack}
           className="mt-2 mb-6 p-6 items-center bg-blue-500 uppercase rounded font-bold text-sm hover:bg-blue-700 transition-colors flex justify-between"
