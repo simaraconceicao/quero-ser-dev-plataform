@@ -68,10 +68,10 @@ export function About() {
           <span className="text-center font-bold text-4xl m-10 border-gray-400 flex justify-center">
             Conteúdo do curso ReactJS para iniciantes
           </span>
-          <p className="w-[70%] mt-4 mb-1 text-gray-200 text-2xl leading-relaxed text-center flex justify-center p-6">
+          <p className="w-[80%] mt-4 mb-1 text-gray-200 text-2xl leading-relaxed text-center flex justify-center p-6 lg:w-[70%]">
             ReactJS é a tecnologia mais usada por pessoas desenvolvedoras experientes e também por pessoas que estão aprendendo a programar, de acordo com a pesquisa do StackOverflow com mais de 70mil pessoas da comunidade tech lançada em maio de 2022.
           </p>
-          <p className="w-[70%] mt-4 mb-2 text-gray-200 text-2xl leading-relaxed text-center flex justify-center p-6">
+          <p className="w-[80%] mt-4 mb-2 text-gray-200 text-2xl leading-relaxed text-center flex justify-center p-6 lg:w-[70%]">
             Imagina você aprendendo os passos iniciais de como as grandes plataformas web são criadas nos dias de hoje. Plataformas como Facebook, Instagram, Twitter, TikTok, Netflix, AirBnB, Notion e muitas outras.
             Isso te abre possibilidades de conseguir sua vaga como dev front-end jr., num dos mercados que mais cresce no Brasil e no mundo, com salários e benefícios atrativos até mesmo para pessoas iniciantes ou estagiárias.
           </p>
@@ -94,13 +94,13 @@ export function About() {
         </div>
       </div>
       <div>
-        <span className="text-center font-bold text-4xl m-10 border-gray-400 flex justify-center">
+        <span className="text-center font-bold text-4xl m-10 pt-10 border-gray-400 flex justify-center">
           Vem conhecer um pouquinho sobre mim
         </span>
         <div className={styles.containerCard}>
           <img src={foto} />
           <div className="m-10">
-          <strong className="max-w-[370px] text-3xl mb-6 block">Simara Conceição</strong>
+          <strong className="max-w-[370px] text-3xl  block">Simara Conceição</strong>
           <div className="flex flex-col">
             <span className="max-w-[370px] text-gray-200 text-xl leading-relaxed lg:max-w-[768px]">👩🏾‍💻Dev na @thoughtworksbr</span> 
             <span className="max-w-[370px] text-gray-200 text-xl leading-relaxed lg:max-w-[768px]">💟Instrutora na @reprogramabr e na @pretalab_</span>

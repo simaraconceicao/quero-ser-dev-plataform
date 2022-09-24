@@ -105,13 +105,13 @@ export function Subscribe() {
         <div className="bg-blur bg-cover bg-no-repeat flex flex-col items-center lg:flex lg:justify-center lg:items-center lg:flex-row pt-20">
           <div className="flex justify-center flex-col items-center lg:flex lg:justify-center lg:items-center lg:flex-row lg:gap-72">
             <div className="flex justify-center flex-col items-center">
-              <h1 className="w-[55%] text-center text-4xl font-bold">
+              <h1 className="w-[65%] text-center text-4xl font-bold">
                 Vem assistir GRATUITAMENTE algumas das minhas aulas pra saber se curte o que vem por aí
               </h1>
-              <p className="w-[70%] mt-4 text-gray-200 text-2xl leading-relaxed text-center p-6">
+              <p className="w-[80%] mt-4 text-gray-200 text-2xl leading-relaxed text-center p-6">
                 Eu gravei essas aulas de ReactJS para iniciantes em novembro de 2021 e disponibilizei numa playlist secreta do canal quero ser dev. São tutoriais de ReactJS com exercícios e projetos. 
               </p>
-              <p className="w-[70%] text-gray-200 text-2xl leading-relaxed text-center p-6">
+              <p className="w-[80%] text-gray-200 text-2xl leading-relaxed text-center p-6">
                 Lembrando que para o novo curso, ao pagar um baixo custo você terá acesso ao conteúdo atualizado e mais completo que vai te habilitar a criar projetos pessoais do zero ao deploy com ReactJS. Além de alguns bônus: 10 projetos para iniciar o seu portfólio de ReactJS e Roadmap de ReactJS com mapeamento de próximos passos nos estudos.
               </p>
               <button 
