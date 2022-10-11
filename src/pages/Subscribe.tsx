@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { Logo } from '../components/Logo'
 import { About } from '../components/About/About'
 import { Footer } from '../components/Footer'
-import { List, YoutubeLogo } from 'phosphor-react'
+import { ArrowArcLeft, List, YoutubeLogo } from 'phosphor-react'
 import styles from './menu.module.css'
 import { useCreateSubscriberMutation } from '../graphql/generated'
 
@@ -22,6 +22,11 @@ export function Subscribe() {
   function goToEvent() {
     navigate('/event')
   }
+
+  function goBack() {
+    navigate('/')
+  }
+
   const [createSubscriber, { loading }] = useCreateSubscriberMutation()
 
   async function handleSubscribe(event: FormEvent) {
@@ -43,15 +48,18 @@ export function Subscribe() {
       <nav>
         <List size={32} onClick={handleMenu} className={styles.hamburguer} />
         <ul className={open ? styles.hamburguerOpen : styles.menu}>
-          <li className={open ? styles.itemOpen : styles.item}>
-            <a className={open ? styles.linkOpen : styles.link} href="#inicio">Início</a>
-          </li>
-          <li className={open ? styles.itemOpen : styles.item}>
-            <a className={open ? styles.linkOpen : styles.link} href="#about">Sobre</a>
-          </li>
+          
           <li className={open ? styles.itemOpen : styles.item}>
             <a  className={open ? styles.linkOpen : styles.link} href="#degustacao">Playlist secreta grátis</a>
           </li>
+
+          <button 
+            onClick={goBack}
+            className="m-2 p-6 items-center bg-blue-500 uppercase rounded font-bold text-sm hover:bg-blue-700 transition-colors flex justify-between"
+          >
+            <ArrowArcLeft size={24} />
+              Voltar para página inicial
+          </button>
         </ul>
       </nav>
       <div id="inicio">

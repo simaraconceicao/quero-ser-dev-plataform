@@ -4,8 +4,6 @@ import { Sidebar } from '../components/Sidebar'
 import { Video } from '../components/Video'
 import { 
   CaretRight, 
-  InstagramLogo, 
-  LinkedinLogo, 
   SpotifyLogo, 
   YoutubeLogo 
 } from 'phosphor-react'
