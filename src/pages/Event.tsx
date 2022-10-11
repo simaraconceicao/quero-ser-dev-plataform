@@ -2,11 +2,6 @@ import { useParams } from 'react-router-dom'
 import foto from '../assets/foto.png'
 import { Sidebar } from '../components/Sidebar'
 import { Video } from '../components/Video'
-import { 
-  CaretRight, 
-  SpotifyLogo, 
-  YoutubeLogo 
-} from 'phosphor-react'
 
 
 export function Event() {
