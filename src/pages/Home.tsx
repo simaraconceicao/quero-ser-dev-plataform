@@ -23,8 +23,8 @@ export function Home() {
     open ? setOpen(false) :  setOpen(true)
   }
 
-  function goToCouse() {
-    navigate('/course')
+  function goToEvent() {
+    navigate('/event')
   }
 
   return(
@@ -45,7 +45,7 @@ export function Home() {
             <a className={open ? styles.linkOpen : styles.link} href="#comunidade">Comunidade</a>
           </li>
           <button 
-            onClick={goToCouse}
+            onClick={goToEvent}
             className="m-2 p-6 items-center bg-blue-500 uppercase rounded font-bold text-sm hover:bg-blue-700 transition-colors flex justify-between"
           >
             Reactjs para iniciantes
