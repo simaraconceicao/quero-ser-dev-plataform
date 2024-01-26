@@ -1,0 +1,70 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #282c34;
+  color: #abb2bf;
+}
+
+.title-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #9fa8da;
+}
+
+.playground-container {
+  display: flex;
+  flex-direction: column; /* Alterado para uma coluna em dispositivos móveis */
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100vh;
+  padding: 20px;
+}
+
+.editor-container,
+.output-container {
+  flex: 1;
+  background-color: #1e2228;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px; /* Adicionado para espaçamento entre os componentes em dispositivos móveis */
+}
+
+.button-container {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #9fa8da;
+  color: #282c34;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #9fa8da;
+}
+
+strong {
+  color: #9fa8da;
+}
+
+@media (min-width: 768px) {
+  /* Consulta de mídia para telas maiores que 768 pixels de largura */
+  .playground-container {
+    flex-direction: row; /* Alterado para uma linha em telas maiores */
+  }
+
+  .output-container {
+    margin-left: 20px;
+    margin-bottom: 0; /* Removido para não adicionar espaçamento extra em telas maiores */
+  }
+}
