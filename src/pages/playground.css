@@ -1,24 +1,8 @@
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #282c34;
-  color: #abb2bf;
-}
 
-.title-container {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-h1 {
-  font-size: 24px;
-  color: #9fa8da;
-}
 
 .playground-container {
   display: flex;
-  flex-direction: column; /* Alterado para uma coluna em dispositivos móveis */
+  flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
   height: 100vh;
@@ -28,43 +12,43 @@ h1 {
 .editor-container,
 .output-container {
   flex: 1;
-  background-color: #1e2228;
+  background-color: #444c5e;
+  color: #9fa8da;
   padding: 20px;
   border-radius: 5px;
-  margin-bottom: 20px; /* Adicionado para espaçamento entre os componentes em dispositivos móveis */
-}
-
-.button-container {
   margin-bottom: 20px;
+  overflow: auto; /* Adicionado para rolar o conteúdo se necessário */
 }
 
-button {
-  background-color: #9fa8da;
+.button-container button {
+  background-color: #ce93d8;
   color: #282c34;
   padding: 10px 20px;
   font-size: 16px;
-  border: none;
+  border: 1px solid #ce93d8; /* Adiciona uma borda */
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  margin-right: 10px; /* Adiciona um espaçamento à direita */
+  margin-bottom: 20px;
 }
 
-button:hover {
-  background-color: #9fa8da;
+.button-container button:hover {
+  background-color: #ba68c8;
 }
 
 strong {
-  color: #9fa8da;
+  color: #ce93d8;
 }
 
-@media (min-width: 768px) {
-  /* Consulta de mídia para telas maiores que 768 pixels de largura */
-  .playground-container {
-    flex-direction: row; /* Alterado para uma linha em telas maiores */
-  }
+h1 {
+  font-size: 24px;
+  color: #ce93d8;
+}
 
+@media (max-width: 600px) {
+  .editor-container,
   .output-container {
-    margin-left: 20px;
-    margin-bottom: 0; /* Removido para não adicionar espaçamento extra em telas maiores */
+    font-size: 16px; /* Ajuste conforme necessário */
   }
 }
